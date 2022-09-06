@@ -1,0 +1,298 @@
+body, .details, .content > h2, .content .head ul li,
+.content .right-bar,.details .linkes{
+    direction: rtl;
+    float: right;
+}
+body{ overflow-x: hidden; width: 100%; }
+/* start header */
+.header,.content > h2, .details, .books h5, .books .chapters p,
+.books h4,.content .head ul li,.content .head ul li span,
+.content .right-bar ul li a span,.details .linkesو
+.content, .content .right-bar ul li a,.content .head ul li a {
+    font-family: 'Cairo', sans-serif;
+}
+
+.header{
+    height: 81px;
+    color: #707070;
+    background: #fff;
+    padding: 20px;
+    display: table;
+    box-shadow: 0px 0px 6px 0px;
+    width: 100%;
+    text-align: right;
+    position: fixed;
+    z-index: 10;
+}
+.header h5{     font-size: 30px; font-weight: 300; font-family: "Diwani Letter";
+}
+/* start content */
+.content, .content .right-bar ul li a,
+.header h5,.content .head ul li a{ color: #858573; }
+.content{ margin-top: 150px; overflow: hidden; }
+.content > h2 {
+    margin-top: 180px;
+    font-size: 50px;
+    font-weight: 400;
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+}
+.content .line{
+    position: relative;
+    width: 90px;
+    left: -85px;
+    height: 1px;
+    background: #858573;
+    top: 410px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+.content > .image{
+    width: 700px;
+    margin-right: 386px;
+    height: 400px;
+    display: flex;
+}
+.content .image > img{ width: 100%; height: 100%; }
+/* start title of books */
+.content .head,.content .right-bar{
+    background-color: #FCFCFC;
+    display: flex;
+    margin-right: 205px;
+}
+.content .head {
+    min-height: 110px;
+    border: 1px solid #7070701a;
+}
+
+.content .head ul li{ padding: 15px; padding-left: 205px; }
+.content .head ul li label{
+    background-color: #858573;
+    padding: 15px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.content ul li label img { width: 94%; height: 94%; }
+.content .head ul li a{
+    font-weight: 400;
+    font-size: 21px;
+    text-decoration: none;
+    margin-right: 2px;
+
+}
+/*  right-bar */
+.content .right-bar > ul,.content .head > ul { padding-right: 0px; }
+.content .right-bar > ul li  a {
+    padding-top: 19px;
+    text-decoration: none;
+    display: block;
+    font-size: 35px;
+    border: 1px solid #7070701a;
+    min-height: 105px;
+    padding-right: 45px;
+    padding-left: 113px;
+    border-radius: 0%;
+    -webkit-border-radius: 0%;
+    -moz-border-radius: 0%;
+    -ms-border-radius: 0%;
+    -o-border-radius: 0%;
+}
+.content .right-bar > ul li .active {
+    background-color: #EFEFEF;
+    color: #858573;
+    font-weight: 800;
+    padding-right: 49px;
+}
+/* start detail */
+.details{
+    width: 825px;
+    padding-top: 16px;
+    padding-left: 172px;
+    padding-right: 19px;
+    border: 1px solid #7070701a; 
+    background-color: #fff;
+}
+.details .tab-content{ background-color: #fff !important; }
+.details > p { text-align: right; font-size: 18px; }
+.books{margin-right: 20px; }
+.books h4, .books h5, .books .chapters{ text-align: right; }
+.books h4 { font-weight: bolder; }
+.books h5{
+    border-bottom: 2px solid;
+    padding-bottom: 8px;
+    width: 440px;
+    font-weight: 900;
+    font-size: 25px;
+    margin-top: 10px;
+}
+.books .chapters p { font-size: 18px; font-weight: 500; }
+/* start linkes pdf */
+.details .linkes ul li a { text-decoration: none; }
+/* start header */
+.final-header {
+    background-color: #F3F3F3;
+    color: #707070;
+    width: 100%;
+    min-height: 55px;
+    margin-bottom: 15px;
+    padding-top: 13px;
+    margin-top: 70px;
+}
+/* phone previwe */
+@media only screen and (max-width: 1000px){
+    .header h5 { font-size: 13px; }
+    .content .head{
+        margin-right: 0;
+        margin-bottom: 20px;
+        min-height: 50px;
+        padding-top: 10px;
+        width: 87%;
+        float: left;
+        margin-left: 10px;
+        margin-top: -75px;
+        }
+    .content .head ul {  margin: auto; min-width: 100%; margin-right: 9%; }
+    .content .head ul li { float: right; padding: 0; text-align: center;width: 31%;}
+    .content .head ul li label{
+        padding-bottom: 8px;
+        padding-top: 7px;
+        padding-right: 10px;
+        padding-left: 12px;
+        height: 51px;
+        width: 30%;
+        min-width: 47px;
+        display: block;
+        margin-right: 17px;
+    }
+    .content .head ul li a { font-size: 13px; float: right; margin: 0px 15px 7px 0px; }
+    .details { padding-left: 0; }
+    .content .right-bar {
+        background: #fff;
+        display: block;
+        margin-right: 0;
+        width: 100%;
+    }
+    .content .right-bar > ul{ flex-direction: row !important; margin-left: 3px; float: left; width: 88%; }
+    .content .right-bar > ul li a, .content .right-bar > ul li .active {
+        text-decoration: none;
+        display: block;
+        font-size: 15px;
+        border: 1px solid #7070701a;
+        min-height: 65px;
+        padding: 0;
+        width: 100%;
+        padding-top: 18px;
+        text-align: center; }
+    .content .right-bar > ul li{ width: 33%; }
+    .content > h2 {  font-size: 40px; position: relative; left: 70px;}
+    .content .line {
+        position: relative;
+        width: 165px;
+        left: 50px;
+        height: 1px;
+        background: #858573;
+        top: 420px;}
+    .details > p { font-size: 15px; }
+    .books .chapters p,.details .linkes ul li a { font-size: 13px; font-weight: 400; }
+    .books h4, .books h5 { font-size: 15px;    width: 50%;
+    }
+    .content > .image {
+        margin-right: 0px;
+        width: 100%;
+        height: 314px;
+        margin-top: 19px;
+        position: relative;
+        top: -103px;}
+    .details {
+        width: 87%;
+        margin-right: 43px;
+        border: 1px solid #7070701a;
+        background-color: #fff;
+        padding: 10px 10px 10px 10px;
+        float: left;
+        margin-left: 10px;
+    }
+      
+}
+@media only screen and (min-width: 769px) and (max-width:1400px) { 
+    .content .image > img {
+        width: 97%;
+        min-height: 135%;
+        margin-top: -62px;
+    }
+    .header h5 { font-size: 13px; }
+    .content .head{
+        margin-right: 0;
+        margin-bottom: 20px;
+        min-height: 50px;
+        padding-top: 10px;
+        width: 87%;
+        float: left;
+        margin-left: 10px;
+        margin-top: -75px;
+        }
+    .content .head ul {  margin: auto; min-width: 100%; margin-right: 9%; }
+    .content .head ul li { float: right; padding: 0; text-align: center;width: 33%;}
+    .content .head ul li label{
+        padding-bottom: 8px;
+        padding-top: 7px;
+        padding-right: 10px;
+        padding-left: 12px;
+        height: 51px;
+        width: 20%;
+        min-width: 47px;
+        display: block;
+        margin-right: 17px;
+    }
+    .content .head ul li a { font-size: 13px; float: right; margin: 0px 15px 7px 0px; }
+    .details { padding-left: 0; }
+    .content .right-bar { background: #fff; display: block; margin-right: 0; width: 100%; }
+    .content .right-bar > ul{ flex-direction: row !important; margin-left: 3px; float: left; width: 88%; }
+    .content .right-bar > ul li a, .content .right-bar > ul li .active {
+        text-decoration: none;
+        display: block;
+        font-size: 15px;
+        border: 1px solid #7070701a;
+        min-height: 65px;
+        padding: 0;
+        width: 100%;
+        padding-top: 18px;
+        text-align: center; }
+    .content .right-bar > ul li{ width: 33%; }
+    .content > h2 {  font-size: 40px; position: relative; left: 70px;}
+    .content .line {
+        position: relative;
+        width: 165px;
+        left: 50px;
+        height: 1px;
+        background: #858573;
+        top: 420px;}
+    .details > p { font-size: 15px; }
+    .books .chapters p,.details .linkes ul li a { font-size: 13px; font-weight: 400; }
+    .books h4, .books h5 { font-size: 15px;    width: 50%;
+    }
+    .content > .image {
+        margin-right: 0px;
+        width: 100%;
+        height: 314px;
+        margin-top: 19px;
+        position: relative;
+        top: -103px;}
+    .details {
+        width: 87%;
+    margin-right: 43px;
+    border: 1px solid #7070701a;
+    background-color: #fff;
+    padding: 10px 10px 10px 10px;
+    float: left;
+    margin-left: 10px;
+    }
+      
+}
